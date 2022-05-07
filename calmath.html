@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title> calcul de matrice </title>
+
+  <link rel="stylesheet" title="normal" href="calcmatStyle.css"/>
+
+  <script type="application/javascript" src="calcmatjs.js"> </script>
+
+</head>
+
+<body>
+<div id="calcmath">
+
+
+  <div id="matB">
+    <input  id="1" value=""><input id="2"  value=""><input  id="3" value=""><br/>
+    <input   id="4" value=""><input  id="5" value=""><input  id="6" value=""><br/>
+    <input   id="7" value=""><input  id="8" value=""><input  id="9" value=""><br/>
+
+    <button onclick="erase('b')"> effacer B</button><br/>
+    <button onclick="idB()"> matrice Identité</button><br/>
+    <button onclick="aleatory('b')"> matrice aleatoire </button>
+  </div>
+
+<div id="matA">
+  <input   id="10" value=""><input  id="11" value=""><input  id="12" value=""><br/>
+  <input   id="13" value=""><input id="14"  value=""><input id="15"  value=""><br/>
+  <input  id="16"  value=""><input  id="17" value=""><input id="18"  value=""><br/>
+
+<button onclick="erase('a')"> effacer A</button><br/>
+  <button onclick="idA()"> matrice Identité</button> <br/>
+  <button onclick="aleatory('a')"> matrice aleatoire </button>
+</div>
+
+  <br/><br/><br/><br/>
+
+
+<div id="result">
+  <button onclick="AddOrMinus('+')"> A + B </button>
+  <button onclick="aleatory('a');aleatory('b');AddOrMinus('-')"> A + B aleatory</button><br/>
+
+  <button onclick="AddOrMinus('-')"> A - B </button>
+  <button onclick="aleatory('a');aleatory('b');AddOrMinus('-')"> A - B aleatory</button><br/>
+
+  <button onclick="erase('a');erase('b');erase('r')"> tout effacer</button>
+
+  <p> resultat</p>
+<input id="r1" value="" readonly="readonly"><input id="r2" value="" readonly="readonly"><input id="r3" value="" readonly="readonly"><br/>
+<input id="r4" value="" readonly="readonly"><input id="r5" value="" readonly="readonly"><input id="r6" value="" readonly="readonly"><br/>
+<input id="r7" value="" readonly="readonly"><input id="r8" value="" readonly="readonly"><input id="r9" value="" readonly="readonly"><br/>
+</div>
+
+
+</div>
+</body>
+
+</html>
