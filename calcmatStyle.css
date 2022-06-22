@@ -45,3 +45,11 @@ div#calcmath{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+mo {
+    padding-left: 0.22em;
+    padding-right: 0.22em;
+    transform-origin: 50% calc(50% + 0.125ex);
+    display: inline-block;
+    vertical-align: baseline;
+}
+

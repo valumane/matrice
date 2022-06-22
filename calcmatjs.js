@@ -208,7 +208,7 @@ if (n==='a'){
     }
 
 }
-function det(m){
+function det(m) {
     let a = eval(coo(0, 2, m).value);
     let b = eval(coo(1, 2, m).value);
     let c = eval(coo(2, 2, m).value);
@@ -219,14 +219,15 @@ function det(m){
     let h = eval(coo(1, 0, m).value);
     let i = eval(coo(2, 0, m).value);
 
-let res=a*e*i+b*f*g+c*d*h-g*e*c-h*f*a-i*d*b;
-    if(res===0){
-        document.getElementById('resDet').value = 'matrice non inversible car det ' + m + '=0'
-    } else document.getElementById('resDet').value = res;
-
-
+    let res = a * e * i + b * f * g + c * d * h - g * e * c - h * f * a - i * d * b;
+    if (res === 0) {
+        document.getElementsByTagName('p')[1].style.display = 'initial'
+        document.getElementById('resDet').value = res;
+    } else {
+        document.getElementsByTagName('p')[1].style.display = 'none'
+        document.getElementById('resDet').value = res
+    }
 }
-
 
 function transposate(m){
     let a = eval(coo(0, 2, m).value);
